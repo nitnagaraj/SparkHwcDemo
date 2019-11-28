@@ -11,7 +11,7 @@ package com.hwx
   import com.hortonworks.hwc.HiveWarehouseSession
   val spark = SparkSession.builder.appName("Simple Application").getOrCreate()
   val hive = HiveWarehouseSession.session(spark).build()
-  hive.execute("show tables").show
+  hive.execute("show databases").show
 
   val tname = args(0)
 
