@@ -5,9 +5,7 @@ You can query on your existing Hive table with HWC using below example. This wil
 For testing, you can create a sample table like below and query on the same:
 
 1) Create a table employee in hive and load some data
-        eg: 
-        Create table 
-        ----------------
+       
 ```        
 CREATE TABLE IF NOT EXISTS employee ( eid int, name String, salary String, destination String)
 COMMENT 'Employee details'
@@ -26,7 +24,9 @@ STORED AS TEXTFILE;
 
 LOAD DATA INPATH '/tmp/data.txt' OVERWRITE INTO TABLE employee;
 
-1. To submit application to Yarn in client mode
+1. kinit as spark user and run the job
+
+2. To submit application to Yarn in client mode
 
 > spark-submit:
 
