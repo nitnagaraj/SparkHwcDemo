@@ -15,11 +15,10 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 STORED AS TEXTFILE;
-```
 
         Load data data.txt file into hdfs
         ---------------
- ```
+        
 1,Aadi,10,CE
 2,Tamil,20,CE2
 3,Aman,30,CE3
