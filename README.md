@@ -20,9 +20,9 @@ STORED AS TEXTFILE;
 2,Tamil,20,CE2
 3,Aman,30,CE3
 4,Somraj,40,CE4
-```
 
 LOAD DATA INPATH '/tmp/data.txt' OVERWRITE INTO TABLE employee;
+```
 
 1. kinit as spark user and run the job
 
